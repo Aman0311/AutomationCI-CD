@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-01-11T17:15:09 IST" name="Suite" finished-at="2024-01-11T17:15:44 IST" duration-ms="35512">
+    <groups>
+    </groups>
+    <test started-at="2024-01-11T17:15:09 IST" name="Error validation" finished-at="2024-01-11T17:15:20 IST" duration-ms="11471">
+      <class name="framework.errorValidation">
+        <test-method is-config="true" signature="before()[pri:0, instance:framework.errorValidation@1a4927d6]" started-at="2024-01-11T17:15:09 IST" name="before" finished-at="2024-01-11T17:15:14 IST" duration-ms="4883" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method signature="completeOrder()[pri:0, instance:framework.errorValidation@1a4927d6]" started-at="2024-01-11T17:15:14 IST" name="completeOrder" finished-at="2024-01-11T17:15:20 IST" duration-ms="5862" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Incorrect email or password.] but found [Incorrect email password.]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Incorrect email or password.] but found [Incorrect email password.]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at org.testng.Assert.assertEquals(Assert.java:666)
+at framework.errorValidation.completeOrder(errorValidation.java:29)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1623)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- completeOrder -->
+        <test-method is-config="true" signature="after()[pri:0, instance:framework.errorValidation@1a4927d6]" started-at="2024-01-11T17:15:20 IST" name="after" finished-at="2024-01-11T17:15:20 IST" duration-ms="126" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+      </class> <!-- framework.errorValidation -->
+    </test> <!-- Error validation -->
+    <test started-at="2024-01-11T17:15:09 IST" name="Order Item" finished-at="2024-01-11T17:15:44 IST" duration-ms="35512">
+      <class name="framework.orderItem">
+        <test-method is-config="true" signature="before()[pri:0, instance:framework.orderItem@792b749c]" started-at="2024-01-11T17:15:09 IST" name="before" finished-at="2024-01-11T17:15:14 IST" duration-ms="4605" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method signature="completeOrder(java.util.HashMap)[pri:0, instance:framework.orderItem@792b749c]" started-at="2024-01-11T17:15:14 IST" name="completeOrder" data-provider="dataP" finished-at="2024-01-11T17:15:26 IST" duration-ms="12469" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=Aman@0311, email=snow@gmail.com}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- completeOrder -->
+        <test-method is-config="true" signature="after()[pri:0, instance:framework.orderItem@792b749c]" started-at="2024-01-11T17:15:26 IST" name="after" finished-at="2024-01-11T17:15:26 IST" duration-ms="113" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+        <test-method is-config="true" signature="before()[pri:0, instance:framework.orderItem@792b749c]" started-at="2024-01-11T17:15:26 IST" name="before" finished-at="2024-01-11T17:15:29 IST" duration-ms="2802" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method signature="completeOrder(java.util.HashMap)[pri:0, instance:framework.orderItem@792b749c]" started-at="2024-01-11T17:15:29 IST" name="completeOrder" data-provider="dataP" finished-at="2024-01-11T17:15:39 IST" duration-ms="10124" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=Qwertykey@123, email=jamie@gmail.com}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- completeOrder -->
+        <test-method is-config="true" signature="after()[pri:0, instance:framework.orderItem@792b749c]" started-at="2024-01-11T17:15:39 IST" name="after" finished-at="2024-01-11T17:15:39 IST" duration-ms="233" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+        <test-method is-config="true" signature="before()[pri:0, instance:framework.orderItem@792b749c]" started-at="2024-01-11T17:15:39 IST" name="before" finished-at="2024-01-11T17:15:42 IST" duration-ms="2256" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method signature="validateZaraInOrders()[pri:0, instance:framework.orderItem@792b749c]" started-at="2024-01-11T17:15:42 IST" name="validateZaraInOrders" finished-at="2024-01-11T17:15:44 IST" depends-on-methods="framework.orderItem.completeOrder" duration-ms="2393" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateZaraInOrders -->
+        <test-method is-config="true" signature="after()[pri:0, instance:framework.orderItem@792b749c]" started-at="2024-01-11T17:15:44 IST" name="after" finished-at="2024-01-11T17:15:44 IST" duration-ms="147" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+      </class> <!-- framework.orderItem -->
+    </test> <!-- Order Item -->
+  </suite> <!-- Suite -->
+</testng-results>
